@@ -26,7 +26,11 @@ blockquote {
 }
 
 a {
+  text-decoration: underline;
   color: inherit;
+}
+ul {
+  list-style: none;
 }
 
 img {
@@ -35,4 +39,15 @@ img {
 
 button {
   font: inherit;
+}
+.address {
+  font-style: normal;
+  line-height: 24px;
+}
+.letter-spacing-extended {
+    text-transform: uppercase;
+    line-height: 133%;
+}
+.footer__social-icon {
+    width: 48px;
 }

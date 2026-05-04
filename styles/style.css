@@ -1,3 +1,5 @@
+/* styles/style.css */
+
 .header {
   height: 293px;
   display: grid;
@@ -41,17 +43,30 @@
   text-underline-offset: 3px;
 }
 
+/* Оверлей для cover */
 .cover {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 757px;
-    background-image: url(../images/cover.jpg);
-    background-size: cover;
-    background-position: center;
-    justify-content: space-around;
-    margin-bottom: 180px;
-    gap: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 757px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  margin-bottom: 180px;
+  gap: 42px;
+  position: relative;
+  z-index: 1;
+}
+
+.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
 }
 
 .cover__title {
@@ -61,6 +76,7 @@
   font-size: 100px;
   color: #fff;
   margin-top: 131px;
+  z-index: 2;
 }
 
 .aligned-text_left {
@@ -96,6 +112,7 @@
   text-transform: uppercase;
   color: #fff;
   width: 1000px;
+  z-index: 2;
 }
 
 .cover__description-text {
@@ -130,6 +147,7 @@
   padding-left: 64px;
 }
 
+/* Общие стили для карточек */
 .card_type_film,
 .card_type_book,
 .card_type_picture {
@@ -142,6 +160,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 48px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .card_type_film {
@@ -156,6 +176,19 @@
   background-image: url(../images/card-lot-03.jpg);
 }
 
+/* Оверлей для карточек */
+.card_type_film .overlay,
+.card_type_book .overlay,
+.card_type_picture .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
 .lots__look-more-link {
   padding-left: 64px;
   font-size: 20px;
@@ -168,6 +201,7 @@
   width: 254px;
   text-transform: uppercase;
   font-weight: bold;
+  z-index: 2;
 }
 
 .card__text {
@@ -175,6 +209,7 @@
   color: #fff;
   font-size: 20px;
   line-height: 120%;
+  z-index: 2;
 }
 
 .about {
@@ -221,11 +256,11 @@
 }
 
 .footer {
-    height: 180px;
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-around;
-    gap: 90px;
+  height: 180px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  gap: 90px;
 }
 
 .footer__social-list {

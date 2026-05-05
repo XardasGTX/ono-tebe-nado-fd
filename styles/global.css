@@ -36,10 +36,6 @@ ul {
 img {
   width: 100%;
 }
-
-button {
-  font: inherit;
-}
 .letter-spacing-extended {
     text-transform: uppercase;
     line-height: 133%;

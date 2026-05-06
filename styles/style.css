@@ -23,12 +23,7 @@
 .header__menu-item_active {
   list-style: none;
 }
-
-.header__menu-link {
-  text-decoration: underline;
-}
-
-.header__links-list-item_no-bullit {
+.link_no-bullit {
   text-decoration: none;
 }
 

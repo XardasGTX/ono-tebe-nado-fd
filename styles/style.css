@@ -273,7 +273,7 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: space-around;
-  gap: 90px;  
+  gap: 90px;
   padding-bottom: 40px;
 }
 

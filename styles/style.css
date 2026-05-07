@@ -1,5 +1,4 @@
 .header {
-  height: 293px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -36,11 +35,6 @@
 .address_header {
   justify-self: end;
 }
-
-.address_footer {
-  justify-self: start;
-}
-
 /* Стили cover - только для этой секции */
 .cover {
   display: flex;
@@ -58,7 +52,6 @@
 }
 
 .cover__title {
-  flex-direction: column;
   width: 100%;
   max-width: 1000px;
   font-size: 100px;
@@ -73,13 +66,12 @@
   text-align: left;
   margin-right: auto;
   letter-spacing: 31px;
-  height: 115px;
   line-height: 84px;
   display: block;
 }
 
 .aligned-text_center {
-  line-height: 123px;
+  line-height: 187px;
   letter-spacing: 28px;
   display: block;
   text-align: center;
@@ -88,7 +80,7 @@
 
 .aligned-text_right {
     margin-left: auto;
-    line-height: 149px;
+    line-height: 85px;
     letter-spacing: 28px;
     margin-right: -0.25em;
     display: block;
@@ -184,7 +176,6 @@
 .card-link {
   text-decoration: none;
   display: block;
-  height: 100%;
 }
 
 .card__title {
